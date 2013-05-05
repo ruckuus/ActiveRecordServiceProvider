@@ -1,0 +1,23 @@
+{
+    "name": "ruckuus/php-activerecord-service-provider",
+    "description": "A PHPActiveRecord Service Provider",
+    "keywords": ["silex", "activerecord", "database", "orm"],
+    "homepage": "https://github.com/ruckuus/ActiveRecordServiceProvider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dwi Sasongko S",
+            "email": "ruckuus@gmail.com",
+            "homepage": "http://havinghere.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "silex/silex": "1.0.*@dev",
+        "php-activerecord/php-activerecord": "~1.1.1"
+    },
+    "autoload": {
+        "psr-0": { "Ruckuus\\Silex": "src" }
+    }
+}
