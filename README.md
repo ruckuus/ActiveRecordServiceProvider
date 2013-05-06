@@ -7,8 +7,6 @@ A PHP ActiveRecord ServiceProvider for Silex.
 
 I was about to use [Available ActiveRecord Extension] (https://github.com/RafalFilipek/ActiveRecordExtension/blob/master/ActiveRecordExtension.php), but then I realised that registerNamespace() is deprecated in later version of Silex. This work is experimental, it has a minimum functionality to "work".
 
-ActiveRecord autoloading is done in composer.json.
-
 ## Fetch
 
 The recommended way to install ActiveRecordServiceProvider is [through composer](http://getcomposer.org).
@@ -42,14 +40,14 @@ use Ruckuus\Silex\ActiveRecordServiceProvider;
 
 $app = new Application();
 
-$app['ar.model_dir'] = __DIR__ . '/App/Model';
-$app['ar.connections'] =  array (
+
+$app->register(new ActiveRecordServiceProvider(), array(
+    'ar.model_dir' = __DIR__ . '/App/Model';
+    'ar.connections' =  array (
             'development' => 'mysql://root@localhost/database_name'
         );
-
-$app['ar.default_connection'] = 'development';
-
-$app->register(new ActiveRecordServiceProvider());
+    'ar.default_connection' = 'development';
+));
 
 ```
 
