@@ -40,13 +40,10 @@ use Ruckuus\Silex\ActiveRecordServiceProvider;
 
 $app = new Application();
 
-
 $app->register(new ActiveRecordServiceProvider(), array(
-    'ar.model_dir' = __DIR__ . '/App/Model';
-    'ar.connections' =  array (
-            'development' => 'mysql://root@localhost/database_name'
-        );
-    'ar.default_connection' = 'development';
+    'ar.model_dir' => __DIR__ . '/App/Model',
+    'ar.connections' =>  array ('development' => 'mysql://root@localhost/database_name'),
+    'ar.default_connection' => 'development',
 ));
 
 ```
