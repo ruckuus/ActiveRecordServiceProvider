@@ -17,7 +17,7 @@ Just create a composer.json file for your project:
 {
     "require": {
         "ruckuus/php-activerecord-service-provider": "dev-master",
-        "silex/silex": "1.0.*@dev"
+        "silex/silex": "1.1.*@dev"
     }
 }
 ```
