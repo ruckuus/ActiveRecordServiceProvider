@@ -12,32 +12,10 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "kla/php-activerecord",
-                "version": "dev-master",
-                "autoload": {
-                    "psr-0": {
-                        "ActiveRecord": "lib/"
-                    },
-                    "files": [
-                        "ActiveRecord.php"
-                    ] 
-                },
-                "source": {
-                    "url": "https://github.com/kla/php-activerecord",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        } 
-     ],
     "require": {
         "php": ">=5.3.0",
         "silex/silex": "~1.0",
-        "php-activerecord/php-activerecord": "~1.1.1"
+        "php-activerecord/php-activerecord": "~1.2"
     },
     "autoload": {
         "psr-0": { "Ruckuus\\Silex": "src" }
